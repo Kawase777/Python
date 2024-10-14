@@ -1,17 +1,11 @@
-# if / elif      / else
-# se / se não se / se não
-# Tab representa 4 espaços essa hierarquia representa 
-# que este trecho de codigo está dentro de if o trecho 
-# "print('você entrou no sistema)'''
+# Solicita os valores ao usuário
+primeiro_valor = input('Digite o primeiro valor: ')
+segundo_valor = input('Digite o segundo valor: ')
 
-entrada = input('Vovê quer "entrar" ou "sair"? ')
-
-if entrada == 'entrar':
-    print('Você entrou no sistema')
- 
-
-elif entrada == 'sair':
-    print('Você saiu do sistema')
-
+# Faz a comparação
+if segundo_valor > primeiro_valor:
+    print(f"{segundo_valor=} é maior que {primeiro_valor=}")
+elif segundo_valor < primeiro_valor:
+    print(f"{primeiro_valor=} é maior que {segundo_valor=}")
 else:
-    print('Você não digitou nem entrar e nem sair.')
+    print(f"{primeiro_valor=} e {segundo_valor=} são iguais")
